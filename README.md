@@ -2,6 +2,7 @@
 Base code for Ritu 15 website. Ritu 15 is the techno cultural fest of Govt. Rajiv Gandhi Institute of Technology, kottayam.
 
 FB: https://www.facebook.com/rituofficial
+
 TW: https://twitter.com/RITU_Official/
 
 ## About Govt. Rajiv Gandhi Institute of Technology
