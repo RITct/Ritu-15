@@ -6,30 +6,24 @@ body,
 	width: 100%;
 	height: 100%;
 }
-
 .wave-container {
 	background: #aaa;
 }
-
 .menu-wrap a {
-	color: #b8b7ad;
+	color: #ccc;
 }
-
 .menu-wrap a:hover,
 .menu-wrap a:focus {
-	color: #c94e50;
+	color: #56d6fe;
 }
-
 .content-wrap {
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 }
-
 .content {
 	position: relative;
 	background: #b4bad2;
 }
-
 .content::before {
 	position: absolute;
 	top: 0;
@@ -45,64 +39,54 @@ body,
 	-webkit-transition: opacity 0.4s, -webkit-transform 0s 0.4s;
 	transition: opacity 0.4s, transform 0s 0.4s;
 }
-
+/* Menu Button */
 /* Menu Button */
 .menu-button {
 	position: fixed;
 	bottom: 0;
 	z-index: 1000;
-	margin: 1em;
 	padding: 0;
-	width: 2.5em;
-	height: 2.25em;
 	border: none;
 	text-indent: 2.5em;
 	font-size: 1.5em;
 	color: transparent;
 	background: transparent;
 }
-
 .menu-button{
-	width: 62px;
-	height: 60px;
+	width: 150px;
+	height: 150px;
 	position: absolute;
-	left: 4px;
-	bottom: 3px;
+	left: 1%;
+	bottom: 1%;
 	overflow: hidden;
 	text-indent: 16px;
-	border:2px solid #000;
-	border-radius:100px;
 	overflow: hidden;
-	box-shadow: 0 0 5px 4px #000;
-	background: url('../images/menu1.png') -1px no-repeat;
-
+	background: url('../images/menu1.png') no-repeat;
 }
-
 .menu-button:hover {
 	opacity:1;
-	background: url('../images/menu1.png') -64px -2px no-repeat;
+	background: url('../images/menu1.png') -154px no-repeat;
+	
 }
-
 /* Close Button */
 .close-button {
-	width: 50px;
-	height: 50px;
-	background:url('../images/closebut.png') no-repeat;
+	width: 87px;
+	height: 38px;
+	margin:auto;
+	background:url('../images/close.png') 0 2px no-repeat;
 	position: absolute;
-	left: 1.85em;
-	bottom: 1.75em;
+	left: 0;
+	bottom: 8.2em;
 	overflow: hidden;
+	border-radius:100px;
 	text-indent: 16px;
 	border: none;
 	z-index: 1001;
 	color: transparent;
 }
 .close-button:hover{
-	background:url('../images/closebut.png')  -55px 0 no-repeat;
+	background:url('../images/close.png') -87px 2px no-repeat;
 }
-
-
-
 /* Menu */
 .menu-wrap {
 	position: absolute;
@@ -117,7 +101,6 @@ body,
 	-webkit-transition: -webkit-transform 0.4s;
 	transition: transform 0.4s;
 }
-
 .menu {
 	position: absolute;
 	width: 100%;
@@ -128,7 +111,6 @@ body,
 	-webkit-transform: translate3d(0,-50%,0);
 	transform: translate3d(0,-50%,0);
 }
-
 .icon-list a,
 .close-button {
 	opacity: 0;
@@ -137,16 +119,13 @@ body,
 	-webkit-transition: opacity 0.4s, -webkit-transform 0.4s;
 	transition: opacity 0.4s, transform 0.4s;
 }
-
 .icon-list a {
 	display: inline-block;
 	padding: 0.8em;
 }
-
 .icon-list a i {
 	vertical-align: middle;
 }
-
 .icon-list a span {
 	display: inline-block;
 	margin-left: 10px;
@@ -155,7 +134,6 @@ body,
 	font-weight: 700;
 	letter-spacing: 1px;
 }
-
 /* Morph Shape */
 .morph-shape {
 	position: absolute;
@@ -165,13 +143,12 @@ body,
 	top: 0;
 	left: 0;
 	fill: #000;
-	opacity:0.5;
+	opacity:0.7;		/* THE FUCKING OPACITY!!! */
 	-webkit-transition: -webkit-transform 0.4s;
 	transition: transform 0.4s;
 	-webkit-transform: translate3d(-400px,0,0);
 	transform: translate3d(-400px,0,0);
 }
-
 /* Shown menu */
 .show-menu .menu-wrap,
 .show-menu .icon-list a,
@@ -181,49 +158,40 @@ body,
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
-
 .show-menu .menu-wrap,
 .show-menu .content::before {
 	-webkit-transition-delay: 0s;
 	transition-delay: 0s;
 }
-
 .show-menu .icon-list a,
 .show-menu .close-button,
 .show-menu .content::before {
 	opacity: 1;
 }
-
 .show-menu .icon-list a:nth-child(2) {
 	-webkit-transition-delay: 0.05s;
 	transition-delay: 0.05s;
 }
-
 .show-menu .icon-list a:nth-child(3) {
 	-webkit-transition-delay: 0.1s;
 	transition-delay: 0.1s;
 }
-
 .show-menu .icon-list a:nth-child(4) {
 	-webkit-transition-delay: 0.15s;
 	transition-delay: 0.15s;
 }
-
 .show-menu .icon-list a:nth-child(5) {
 	-webkit-transition-delay: 0.2s;
 	transition-delay: 0.2s;
 }
-
 .show-menu .icon-list a:nth-child(6) {
 	-webkit-transition-delay: 0.25s;
 	transition-delay: 0.25s;
 }
-
 .show-menu .close-button {
 	-webkit-transition-delay: 0.3s;
 	transition-delay: 0.3s;
 }
-
 .show-menu .content::before {
 	-webkit-transition: opacity 0.4s;
 	transition: opacity 0.4s;

@@ -1,3 +1,107 @@
 body{
-	background:url('../images/bg2.png') repeat;
+	width:1200px;
+	background: url('../images/bg_winter.jpg');
+	background-size: cover;
+	position: fixed!important
 	}
+#big {
+font-size:18px;
+font-weight: bold;
+}
+
+
+.socialmedia {
+box-shadow: 0 0 10px 2px #000;
+}
+
+.fb{
+bottom:8%;
+right:.5%;
+opacity:.9;
+cursor:pointer;
+position: fixed;
+}
+.fb:hover{
+opacity:1;
+}
+.twittr{
+position: fixed;
+bottom:18.5%;
+right:.5%;
+opacity:.9;
+}
+.twittr:hover{
+opacity:1;
+}
+
+.logo {
+bottom:-1%;
+right:38%;
+position: fixed;
+}
+.pageviews{
+background:rgba(0,0,0,1);
+width:105px;
+bottom:1.2%;
+right:.7%;
+color:#ddd;
+opacity:1;
+cursor:pointer;
+font-family:'Comic Sans MS', Verdana, Arial;
+letter-spacing:.5px;
+box-shadow: 0 0 10px 2px #000;
+font-size:10px;
+height:32px;
+position:fixed;
+padding:6px 4px 6px 0;
+}
+/*
+
+.socialmedia {
+box-shadow: 0 0 10px 2px #000;
+}
+
+.fb{
+bottom:8%;
+right:.5%;
+opacity:.9;
+cursor:pointer;
+position: fixed;
+}
+.fb:hover{
+opacity:1;
+}
+.twittr{
+position: fixed;
+bottom:18.5%;
+right:.5%;
+opacity:.9;
+}
+.twittr:hover{
+opacity:1;
+}
+
+.logo {
+bottom:0;
+right:0;
+position: fixed;
+}
+
+.pageviews{
+background:rgba(0,0,0,1);
+width:105px;
+bottom:1.2%;
+right:.7%;
+color:#ddd;
+opacity:1;
+cursor:pointer;
+font-family:'Comic Sans MS', Verdana, Arial;
+letter-spacing:.5px;
+box-shadow: 0 0 10px 2px #000;
+font-size:10px;
+height:32px;
+position:fixed;
+padding:6px 4px 6px 0;
+}
+
+*/

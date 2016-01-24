@@ -1,0 +1,91 @@
+
+
+.bubble {
+	width: 250px;
+	margin:3%;
+	font-family:Calibri, Verdana, Arial;
+	border:2px solid #257942;
+	-moz-box-shadow: 0px 0px 25px 7px #000;
+  -khtml-box-shadow:  0px px 25px 7px #000;
+  -webkit-box-shadow:  0px 0px 25px 7px #000;
+	box-shadow:  0px 0px 25px 7px #000;	
+	position: relative; 
+	float:left;
+	z-index: 9900; /* the stack order: displayed under ribbon rectangle (100) */
+}
+
+.rectangle {
+	background: #23A734 url(../img/bgT.png) repeat;
+	height: 50px;
+	width: 278px;
+	position: relative;
+	left:-15px;
+	top: 30px;
+	float: left;
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -khtml-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+  -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	z-index: 10000; /* the stack order: foreground */
+}
+
+.rectangle h2 {
+	font-size: 22px;
+	color: #fff;
+	letter-spacing:1px;
+	padding-top: 10px;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	text-align: center;
+}
+
+.triangle-l {
+	border-color: transparent #11531A transparent transparent;
+	border-style:solid;
+	border-width:15px;
+	height:0px;
+	width:0px;
+	position: relative;
+	left: -30px;
+	top: 65px;
+	z-index: 9899; /* displayed under bubble */
+}
+
+.triangle-r {
+	border-color: transparent transparent transparent #11531A;
+	border-style:solid;
+	border-width:15px;
+	height:0px;
+	width:0px;
+	position: relative;
+	left: 248px;
+	top: 35px;
+	z-index: 9899; /* displayed under bubble */
+}
+
+.info {
+	padding: 30px 25px 20px 25px;
+	color: #ddd;
+	text-align:center;
+}
+
+.info h2 {
+	font-size: 20px;
+	color: #87C5F8;
+}
+
+.info p {
+	padding-top: 20px;
+	border-top: 3px solid #257942;
+	font-size: 18px;
+	letter-spacing:1px;
+	line-height: 22px;
+	color: #ddd;
+}
+
+.info p a {
+	color: #eee;
+	text-decoration: none;
+}
+
+.info p a:hover {
+	text-decoration: underline;
+}

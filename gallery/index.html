@@ -1,0 +1,83 @@
+
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	<html>
+		<head>
+			<title>Ritu '15 | Gallery</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+			<meta name="author" content="Yadhu Kiran">
+			<meta name="description" content="Techno Cultural fest of RIT - RIT Utsav" />
+			<meta name="keywords" content="RITU, ritu, RIT, techfest, kottayam"/>
+			<link rel="shortcut icon" href="../images/ritu1.ico">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css' />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/portfolio.js" type="text/javascript"></script>
+		<script src="js/init.js" type="text/javascript"></script>
+		
+	</head>
+	<body>
+<!----------------------------------------------------------------------------------------------------------->
+				<link href="../_more/menu.css" rel="stylesheet"/>
+				
+				<ul id="navs" data-open="" data-close="">
+				  <li style="left:-30%;"><a href="../contacts"><img src="../_more/conta.png"/></a></li>
+				  <li style="left:-30%;"><a href="../events"><img src="../_more/ev.png"/></a></li>
+				  <li style="left:-30%;"><a href="../highlights"><img src="../_more/hi.png"/></a></li>
+				  <li style="left:-30%;"><a href=".."><img src="../_more/home.png"/></a></li>
+				</ul>
+				<script type="text/javascript">
+				(function(){
+					var ul=$("#navs"),li=$("#navs li"),i=li.length,n=i-1,r=150;
+					ul.click(function(){
+						$(this).toggleClass('active');
+						if($(this).hasClass('active')){
+							for(var a=0;a<i;a++){
+								li.eq(a).css({
+									'transition-delay':""+(50*a)+"ms",
+									'-webkit-transition-delay':""+(50*a)+"ms",
+									'left':(r*Math.cos(90/n*a*(Math.PI/180))),
+									'top':(-r*Math.sin(90/n*a*(Math.PI/180)))	
+								});
+							}
+						}else{
+							li.removeAttr('style');
+						}
+					});
+				})($);
+				</script>
+	<!------------------------------------------------------------------------------------------------------------------>
+	
+		<div id="portfolio">
+		<div class="info-keys icon">Navigate with arrow keys</div>
+			<div id="background"></div>		
+			<div class="arrows">
+				<a href="#" class="up">Up</a>
+				<a href="#" class="down">Down</a>
+				<a href="#" class="prev">Previous</a>
+				<a href="#" class="next">Next</a>
+			</div>
+			<div class="gallery">
+				<div class="inside">
+					<div class="item">
+						<div><img src="images/1.jpg" alt="image1" /></div>
+						<div><img src="images/2.jpg" alt="image2" /></div>
+						<div><img src="images/3.jpg" alt="image3" /></div>
+						<div><img src="images/4.jpg" alt="image4" /></div>
+					</div>
+					<div class="item">
+						<div><img src="images/5.jpg" alt="image5" /></div>
+						<div><img src="images/6.png" alt="image6" /></div>
+						<div><img src="images/7.jpg" alt="image7" /></div>
+					</div>
+					<div class="item">
+						<div><img src="images/11.jpg" alt="image8" /></div>
+						<div><img src="images/8.jpg" alt="image9" /></div>
+						<div><img src="images/9.jpg" alt="image10" /></div>
+						<div><img src="images/10.jpg" alt="image11" /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+

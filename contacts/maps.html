@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.js" ></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="prettymaps.js"></script>
+</head>
+<body>
+    <div style="width: 100%; height: 100%;" class="map-canvas"></div>
+    <script>
+
+        $(function(){
+            //default
+            
+                $('.map-canvas').prettyMaps({
+                    address: ['Rajiv Gandhi Institute of Technology, Kottayam'],
+                    image: 'map-icon.png',
+                    hue: '#18B156',
+                    saturation: -30,
+					zoom: 13,
+					//lightness: 10,
+                    panControl: true,
+                    zoomControl: true,
+                    mapTypeControl: true,
+                    scaleControl: true,
+                    streetViewControl: true,
+                    overviewMapControl: true,
+                    scrollwheel: false,
+                });
+        });
+
+  </script>
+</body>
+</html>

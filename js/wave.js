@@ -28,7 +28,7 @@
 	}
 
 	function initEvents() {
-		openbtn.addEventListener( 'click', toggleMenu );
+		openbtn.addEventListener( 'mouseover', toggleMenu );
 		if( closebtn ) {
 			closebtn.addEventListener( 'click', toggleMenu );
 		}
@@ -52,12 +52,12 @@
 				// reset path
 				path.attr( 'd', initialPath );
 				isAnimating = false; 
-			}, 300 );
+			}, 200 );
 		}
 		else {
 			classie.add( bodyEl, 'show-menu' );
 			// animate path
-			path.animate( { 'path' : pathOpen }, 400, mina.easeinout, function() { isAnimating = false; } );
+			path.animate( { 'path' : pathOpen }, 200, mina.easeinout, function() { isAnimating = false; } );
 		}
 		isOpen = !isOpen;
 	}

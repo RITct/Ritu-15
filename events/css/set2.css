@@ -1,0 +1,214 @@
+
+
+/* Common style */
+.cd-gallery li {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+}
+
+.cd-gallery li figcaption {
+	padding:1em;
+	margin:auto;
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.cd-gallery li figcaption::before,
+.cd-gallery li figcaption::after {
+	pointer-events: none;
+}
+
+.cd-gallery li figcaption,
+.cd-gallery li figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.cd-gallery li figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.cd-gallery li h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.cd-gallery li h2 span {
+	font-weight: 800;
+}
+
+.cd-gallery li h2,
+.cd-gallery li p {
+	margin: 0;
+}
+
+.cd-gallery li p {
+	letter-spacing: 1px;
+	font-size: 62%;
+	line-height:18px;
+}
+
+/* Individual effects */
+
+/*---------------*/
+/***** Julia *****/
+/*---------------*/
+
+li.effect-julia {
+	background: #2f3238;
+}
+
+li.effect-julia img {
+	max-width: none;
+	height: auto;
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+
+
+li.effect-julia h5 {
+	position: relative;
+	padding: 0.1em 1em;
+	display: inline-block;
+	margin: 0 0 0.4em 0;
+	padding: 0.4em 0.5em;
+	background: rgba(5,20,27,1);
+	color: #ddd;
+	text-align:center;
+	box-shadow: 0 0 20px 1px #000;
+	text-transform: none;
+	font-weight: bold;
+	font-size: 100%;
+	border-radius: 10px 10px 0 0;
+	z-index:10;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-360px,0,0);
+	transform: translate3d(-360px,0,0);
+}
+li.effect-julia h6 {
+	position: relative;
+	padding: 0.5em 1em;
+	display: inline-block;
+	margin: auto;
+	padding: 0.4em 0.5em;
+	background: rgba(5,20,27,1);
+	color: #ddd;
+	text-align:center;
+	box-shadow: 0 0 20px 1px #000;
+	text-transform: none;
+	font-size: 80%;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-360px,0,0);
+	transform: translate3d(-360px,0,0);
+}
+li.effect-julia p {
+	display: inline-block;
+	margin: 0 0 0.25em;
+	padding: 1em 1em;
+	background: rgba(0,0,0,0.8);
+	color: #eee;	
+	text-transform: none;
+	font-weight: 500;
+	font-size: 75%;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-360px,0,0);
+	transform: translate3d(-360px,0,0);
+}
+
+li.effect-julia h5:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+li.effect-julia h6:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+li.effect-julia p:first-child {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.15s;
+}
+
+li.effect-julia p:nth-of-type(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+li.effect-julia p:nth-of-type(3) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+li.effect-julia:hover h5:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+li.effect-julia:hover h6:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+li.effect-julia:hover p:first-child {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+li.effect-julia:hover p:nth-of-type(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+li.effect-julia:hover p:nth-of-type(3) {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+li.effect-julia:hover{
+z-index:0;
+}
+li.effect-julia:hover img {
+	opacity: 0.9;
+	-webkit-transform: scale3d(1.1,1.1,1);
+	transform: scale3d(1.1,1.1,1);
+}
+
+li.effect-julia:hover h5 {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+li.effect-julia:hover h6 {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+li.effect-julia:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+@media only screen and (min-width:240px) and (max-width:760px)
+{
+	li.effect-julia p,h6,h5 {
+	visibility:hidden;
+	}
+}

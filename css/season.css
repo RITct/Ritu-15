@@ -1,0 +1,14 @@
+
+.sum{background:#111 url(../images/bgR.jpg) top center;height: 100%;background-size: cover;background-repeat:no-repeat;}
+.spr{background:#111 url(../images/bgS.jpg) top center;height: 100%;background-size: cover;background-repeat:no-repeat;}
+.aut{background:#111 url(../images/bgA.jpg) top center;height: 100%;background-size: cover;background-repeat:no-repeat;}
+.win{background :#111 url(../images/bgW.jpg) top center no-repeat;background-size: cover}	
+.collectonme{margin:120px auto; background: red; width:50%; text-align:center; font-size:1.2em; color:#fff;}
+
+/*
+.sum{background:url(../images/11.jpg) top center;height: 100%;background-size: cover;background-repeat:no-repeat;}
+.spr{background:url(../images/springbg3.jpg) top center;height: 100%;background-size: cover;background-repeat:no-repeat;}
+.aut{background:url(../images/autumnbg.jpg) top center;height: 100%;background-size: cover;background-repeat:no-repeat;}
+.win{background : url(../images/winterbg.jpg) top center no-repeat;background-size: cover}	
+.collectonme{margin:120px auto; background: red; width:50%; text-align:center; font-size:1.2em; color:#fff;}
+*/

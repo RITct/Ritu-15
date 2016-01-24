@@ -1,9 +1,10 @@
 ul.accordion{
+	/*cursor:url(../cur50.png),url(myBall.cur),auto;*/
     list-style:none;   
     position:absolute;
-	z-index:10000;
-    right:2%;
-    top:-15px;
+	z-index:1000;
+    right:3.5%;
+    top:-5%;
     font-family: Cambria, serif;
     font-size: 16px;
     font-style: italic;
@@ -11,10 +12,10 @@ ul.accordion{
 }
 ul.accordion li{
     float:right;
-    width:115px;
-    height:450px;
+    width:110px;
+    height:420px;
     display:block;
-	border-radius: 0 0 100px 20px;
+	border-radius: 0 0 90px 20px;
     border-right:2px solid #111;
     border-bottom:2px solid #111;
     background-color:#222;
@@ -23,44 +24,61 @@ ul.accordion li{
     position:relative;
     overflow:hidden;
     cursor:pointer;
-	opacity:0.8;
+	opacity:0.7;
     -moz-box-shadow:0px 15px 20px #000;
     -webkit-box-shadow:0px 15px 20px #000;
     box-shadow:0px 15px 20px #000;
 }
-ul.accordion li.bg1{
-    background-image:url(../images/1.jpg);
+
+ul.accordion li:hover{
+opacity:.9;
 }
-ul.accordion li.bg2{
+ul.accordion li.bg1{
     background-image:url(../images/2.jpg);
 }
-ul.accordion li.bg3{
+ul.accordion li.bg2{
     background-image:url(../images/3.jpg);
 }
-ul.accordion li.bg4{
+ul.accordion li.bg3{
     background-image:url(../images/4.jpg);
+}
+ul.accordion li.bg4{
+    background-image:url(../images/11.jpg);
 }
 ul.accordion li.bleft{
     border-left:2px solid #333;
 }
 ul.accordion li .heading{
     background-color:#fff;
-    padding:10px;
+    padding:18px 20px 18px 20px;
     margin-top:60px;
     opacity:1;
     text-transform:uppercase;
     font-style:normal;
     font-weight:bold;
     letter-spacing:1px;
-    font-size:30px;
+    font-size:35px;
     color:#444;
     text-align:center;
     text-shadow:-1px -1px 1px #ccc;
 }
+ul.accordion li .sub_heading{
+font-size:1em;
+font-weight:bold;
+width:35%;
+background:rgba(240,240,240,.8);
+padding:8px;
+color:#000;
+border-radius:100%;
+margin:10% auto;
+text-align:center;
+}
+
 ul.accordion li .description{
     position:absolute;
     width:480px;
     height:175px;
+	top:51%;
     bottom:0px;
     left:0px;
     display:none;
@@ -70,17 +88,17 @@ ul.accordion li .description h2{
     font-style:normal;
     font-weight:bold;
     letter-spacing:1px;
-    font-size:45px;
+    font-size:35px;
     color:#111;
     text-align:left;
-    margin:0px 0px 15px 20px;
+    margin:0px 0px 0px 20px;
     text-shadow:-1px -1px 1px #ccc;
 }
 ul.accordion li .description p{
     line-height:14px;
-    margin:10px 22px;
+    margin:15px 22px;
     font-family: "Trebuchet MS", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-style: italic;
     font-weight: normal;
     text-transform: none;

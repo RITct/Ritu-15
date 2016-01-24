@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>News</title>
+<base target="_blank">
+
+<style type="text/css">
+body	{
+	background: rgba(0,0,0,.6);
+	margin: 0;
+	padding: 0;
+	border: 0;
+	}
+ /* FONT COLORS */
+div		{ color: #ccc; font: 11px arial, sans-serif; font-weight: normal; }
+.title		{ color: #ccc; font: 12px arial, sans-serif; font-weight: bold; }
+#NewsDiv	{ position: absolute; left: 0; top: 0; width: auto; }
+ /* PAGE LINK COLORS */
+a:link		{ color: #95CAFF; text-decoration: none;}
+a:visited		{ color: #95CAFF; text-decoration: none;}
+a:hover		{ text-decoration: underline; }
+</style>
+
+
+<script type="text/javascript">
+<!-- HIDE CODE JAVASCRIPT NEWS SCROLLER ver 2.0 2013
+
+
+var scrollspeed = 1;		// SET SCROLLER SPEED 1 = SLOWEST
+var speedjump   = 30;		// ADJUST SCROLL JUMPING = RANGE 20 TO 40
+var startdelay  = 5; 		// START SCROLLING DELAY IN SECONDS
+var nextdelay   = 0; 		// SECOND SCROLL DELAY IN SECONDS 0 = QUICKEST
+var topspace    = 0;		// TOP SPACING FIRST TIME SCROLLING
+var frameheight = 120;		// IF YOU RESIZE THE WINDOW EDIT THIS HEIGHT TO MATCH
+
+
+current = (scrollspeed);
+
+
+function HeightData() {
+    AreaHeight = dataobj.offsetHeight;
+    if (AreaHeight === 0) {
+        setTimeout("HeightData()", (startdelay * 1000));
+    } else {
+        ScrollNewsDiv();
+    }
+}
+
+function NewsScrollStart() {
+    dataobj = document.all ? document.all.NewsDiv : document.getElementById("NewsDiv");
+    dataobj.style.top = topspace + 'px';
+    setTimeout("HeightData()", (startdelay * 1000));
+}
+
+function ScrollNewsDiv() {
+    dataobj.style.top = parseInt(dataobj.style.top) - scrollspeed + 'px';
+    if (parseInt(dataobj.style.top) < AreaHeight * (-1)) {
+        dataobj.style.top = frameheight + 'px';
+        setTimeout("ScrollNewsDiv()", (nextdelay * 1000));
+    } else {
+        setTimeout("ScrollNewsDiv()", speedjump);
+    }
+}
+
+// END HIDE CODE -->
+</script>
+</head>
+<body onMouseover="scrollspeed=0" onMouseout="scrollspeed=current" OnLoad="NewsScrollStart();">
+
+			<div id="NewsDiv" style="text-align: left; padding: 5px;">
+					<!-- SCROLLER CONTENT STARTS HERE -->
+					<br>
+					<span class="title">
+					<a href="https://www.facebook.com/dwi.yn.anhysbys">Yadhu Kiran</a><br>
+					</span>
+					Front-end Developer.<br>
+					+91 90 20 960052<br>
+					dwi.yn.anhysbys@live.com
+					<br><br><br>
+
+					<span class="title">
+					<a href="https://www.facebook.com/aswinrajv">Aswin Raj</a><br>
+					</span>
+					Back-end Developer.<br>
+					+91 77 36 722492<br>
+					aswinrajv@gmail.com
+					<br><br><br>
+					
+					<span class="title">
+					<a href="https://www.facebook.com/prabinpv">Prabin P V</a><br>
+					</span>
+					Design Concept<br>
+					+91 94 46 395606<br>
+					prabinpv@gmail.com
+					<br><br><br>
+					
+					<span class="title">
+					<a href="#">Anand S K</a><br>
+					</span>
+					Fine Artist
+					<br>
+					<!-- SCROLLER CONTENT ENDS HERE -->
+			</div>
+	
+</body>
+</html>
